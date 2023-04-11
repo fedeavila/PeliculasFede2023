@@ -11,7 +11,7 @@ namespace PeliculasFede2023.Servicios
 			{
 				Codigo = "IND",
 				Nombre = "Indiana Jones y el templo de la perdición",
-				Duracion = 230,
+				Duracion = 118,
 				Categoria = "Aventura/Acción",
 				Resenia = "Indiana Jones, tras un conflicto nocturno, escapa junto a una cantante y su joven acompañante. Los tres acaban en la India, donde intentarán ayudar a los habitantes de un pequeño poblado, cuyos niños han sido raptados."
 			});
@@ -20,7 +20,7 @@ namespace PeliculasFede2023.Servicios
 			{
 				Codigo = "AVT",
 				Nombre = "Avatar 1",
-				Duracion = 200,
+				Duracion = 162,
 				Categoria = "Ciencia ficción/Acción",
 				Resenia = "En un exuberante planeta llamado Pandora viven los Na'vi, seres que aparentan ser primitivos pero que en realidad son muy evolucionados. Debido a que el ambiente de Pandora es venenoso, los híbridos humanos/Na'vi, llamados Avatares, están relacionados con las mentes humanas, lo que les permite mover..."
 			});
@@ -29,7 +29,7 @@ namespace PeliculasFede2023.Servicios
 			{
 				Codigo = "PES",
 				Nombre = "Pesadilla en la calle Elm",
-				Duracion = 120,
+				Duracion = 91,
 				Categoria = "Terror/Misterio",
 				Resenia = "Un grupo de adolescentes sufre unas pesadillas horrendas en las que un ser deforme que porta garras de acero los persigue. Lo más inquietante es que los hechos empiezan a sugerir que lo que ocurre mientras sueñan repercute en la vida real."
 			});
@@ -38,7 +38,7 @@ namespace PeliculasFede2023.Servicios
 			{
 				Codigo = "NVR",
 				Nombre = "Nueve Reinas",
-				Duracion = 90,
+				Duracion = 115,
 				Categoria = "Crimen/Suspenso",
 				Resenia = "Juan y Marcos son dos estafadores que casualmente se ven involucrados en un asunto que los puede convertir en millonarios: tienen menos de un día para llevar a cabo un engaño que no puede fallar."
 			});
@@ -47,7 +47,7 @@ namespace PeliculasFede2023.Servicios
 			{
 				Codigo = "MSY",
 				Nombre = "Misery",
-				Duracion = 90,
+				Duracion = 107,
 				Categoria = "Terror/Suspenso",
 				Resenia = "Un autor se recupera de un accidente en la casa de una admiradora psicótica, quien le exige que escriba un libro solo para ella."
 			});
@@ -56,7 +56,7 @@ namespace PeliculasFede2023.Servicios
 			{
 				Codigo = "ZOL",
 				Nombre = "Zoolander",
-				Duracion = 95,
+				Duracion = 105,
 				Categoria = "Comedia",
 				Resenia = "Un desafortunado modelo se vuelve el objetivo de un complot para asesinar a un importante líder internacional."
 			});

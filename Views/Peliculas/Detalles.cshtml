@@ -1,0 +1,15 @@
+﻿@model Pelicula
+@{
+    ViewData["Title"] = "Detalles";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Detalles</h1>
+
+<h2>@Model.Nombre</h2>
+
+<p>Duración: <strong>@Model.Duracion</strong> </p>
+
+<p>@Model.Resenia</p>
+
+<a class="btn btn-outline-success" asp-action="Index" >Volver</a>

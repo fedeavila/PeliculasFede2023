@@ -1,0 +1,44 @@
+﻿@model Pelicula;
+@{
+    ViewData["Title"] = "Nueva";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Agregar Nueva Película</h1>
+<form method="post">
+
+    <div class="mb-3">
+        <label asp-for="Codigo" class="form-label"></label>
+        <input type="text" class="form-control" asp-for="Codigo">
+        <span class="text-danger" asp-validation-for="Codigo"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Nombre" class="form-label"></label>
+        <input type="text" class="form-control" asp-for="Nombre">
+        <span class="text-danger" asp-validation-for="Nombre"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Duracion" class="form-label"></label>
+        <input type="number" class="form-control" asp-for="Duracion" value="1">
+        <span class="text-danger" asp-validation-for="Duracion"></span>
+
+    </div>
+    <div class="mb-3">
+        <label asp-for="Categoria" class="form-label"></label>
+        <input type="text" class="form-control" asp-for="Categoria">
+        <span class="text-danger" asp-validation-for="Categoria"></span>
+
+    </div>
+    <div class="mb-3">
+        <label asp-for="Resenia" class="form-label"></label>
+        <textarea class="form-control" asp-for="Resenia" cols="5"></textarea>
+        <span class="text-danger" asp-validation-for="Resenia"></span>
+
+    </div>
+    <div class="btn-group">
+        <button type="submit" class="btn btn-primary">Guardar</button>
+        <a class="btn btn-outline-success" asp-action="Index">Volver</a>
+    </div>
+
+</form>
+

@@ -1,0 +1,23 @@
+﻿@model Pelicula
+@{
+    ViewData["Title"] = "Eliminar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<form method="post">
+    <h1>Eliminar Película</h1>
+
+    <h2>@Model.Nombre</h2>
+
+    <p>Duración: <strong>@Model.Duracion</strong> </p>
+
+    <p>@Model.Resenia</p>
+
+    <div class="btn-group">
+        <button class="btn btn-danger" asp-action="Eliminar" asp-route-id="@Model.Codigo">Eliminar</button>
+        <a class="btn btn-outline-success" asp-action="Index">Volver</a>
+
+    </div>
+
+
+</form>
+

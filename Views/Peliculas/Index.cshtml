@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Pelicula>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Listado de Peliculas</h1>
+    <p>Top 10 mejores peliculas de Herramientas de Programacion.</p>
+</div>
+<a class="btn btn-primary" asp-action="Nueva">Nueva Película</a>
+<hr />
+<table class="table table-hover table-bordered">
+    <thead>
+        <tr>
+            <th>Película</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Any())
+        {
+            foreach (var pelicula in Model)
+            {
+                <tr>
+                    <td>@pelicula.Nombre</td>
+                    <td>
+                        <a class="btn btn-danger" asp-action="Eliminar" asp-route-id="@pelicula.Codigo">Eliminar</a>
+                        <a class="btn btn-info" asp-action="Detalles" asp-route-id="@pelicula.Codigo">Detalles</a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="2">No se agregaron películas todavía</td>
+            </tr>
+        }
+    </tbody>
+</table>
